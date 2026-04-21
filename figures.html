@@ -5,30 +5,35 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Great Figures | The Archive of Civilization</title>
     <link rel="stylesheet" href="styles.css" />
+    <script defer src="script.js"></script>
   </head>
-  <body>
+  <body data-page="figures">
     <div class="site-shell">
       <header class="topbar">
         <div class="topbar-inner">
           <a class="brand" href="index.html">
-            <span class="brand-mark">The Archive of Civilization</span>
-            <span class="brand-sub">National Historical Digital Repository</span>
+            <span class="brand-mark" data-en="The Archive of Civilization" data-zh="文明档案馆">The Archive of Civilization</span>
+            <span class="brand-sub" data-en="National Historical Digital Repository" data-zh="国家历史数字档案馆">National Historical Digital Repository</span>
           </a>
           <nav class="main-nav" aria-label="Main navigation">
-            <a class="is-primary" href="index.html">Home</a>
-            <a class="is-primary" href="figures.html" aria-current="page">Great Figures</a>
-            <a class="is-primary" href="projects.html">Historic Projects</a>
-            <a class="is-primary" href="missing-records.html">Archive Rooms</a>
-            <a class="is-buried" href="workers.html">Minor Lives</a>
+            <a class="is-primary" href="index.html" data-en="Home" data-zh="首页">Home</a>
+            <a class="is-primary" href="figures.html" aria-current="page" data-en="Great Figures" data-zh="伟人档案">Great Figures</a>
+            <a class="is-primary" href="projects.html" data-en="Historic Projects" data-zh="历史工程">Historic Projects</a>
+            <a class="is-primary" href="missing-records.html" data-en="Archive Rooms" data-zh="空白档案室">Archive Rooms</a>
+            <a class="is-buried" href="workers.html" data-en="Minor Lives" data-zh="边缘生命">Minor Lives</a>
+            <div class="language-switcher" aria-label="Language switcher">
+              <button type="button" data-lang="en">EN</button>
+              <button type="button" data-lang="zh">中文</button>
+            </div>
           </nav>
         </div>
       </header>
 
       <section class="page-hero">
         <div class="page-hero-card">
-          <span class="eyebrow">Authorized biographies</span>
-          <h1>Great Figures</h1>
-          <p class="lead">
+          <span class="eyebrow" data-en="Authorized biographies" data-zh="授权传记">Authorized biographies</span>
+          <h1 data-en="Great Figures" data-zh="伟人档案">Great Figures</h1>
+          <p class="lead" data-en="Portraits, offices, citations, eras, quotations, and historical status are preserved in complete form. This page is intentionally formal, polished, and fully legible." data-zh="肖像、官职、引文、年代与历史地位都以完整形态被保存下来。这个页面刻意做得正式、精致而完全清晰。">
             Portraits, offices, citations, eras, quotations, and historical status are preserved in complete form.
             This page is intentionally formal, polished, and fully legible.
           </p>
@@ -39,10 +44,10 @@
         <section class="section-block">
           <div class="section-head">
             <div>
-              <span class="eyebrow">Full records</span>
-              <h2>Canonical Subjects</h2>
+              <span class="eyebrow" data-en="Full records" data-zh="完整档案">Full records</span>
+              <h2 data-en="Canonical Subjects" data-zh="规范化主体">Canonical Subjects</h2>
             </div>
-            <p>
+            <p data-en="Each figure receives a coherent story. The archive grants them image, authorship, motive, and legacy." data-zh="每位人物都拥有一个连贯故事。档案系统赋予他们形象、作者性、动机与遗产。">
               Each figure receives a coherent story. The archive grants them image, authorship, motive, and legacy.
             </p>
           </div>
@@ -51,58 +56,58 @@
             <article class="figure-card">
               <div class="figure-portrait" aria-hidden="true"></div>
               <div>
-                <span class="card-kicker">Emperor</span>
-                <h3>Emperor Jianxu</h3>
+                <span class="card-kicker" data-en="Emperor" data-zh="皇帝">Emperor</span>
+                <h3 data-en="Emperor Jianxu" data-zh="建绪帝">Emperor Jianxu</h3>
               </div>
               <dl class="meta-list">
-                <dt>Years</dt>
+                <dt data-en="Years" data-zh="年份">Years</dt>
                 <dd>1612-1679</dd>
-                <dt>Achievement</dt>
-                <dd>Centralized administrative reforms and court expansion</dd>
-                <dt>Historical status</dt>
-                <dd>Patron of renewal, icon of dynastic stability</dd>
-                <dt>Reference</dt>
-                <dd>Imperial decrees vol. IV, portrait collection A12</dd>
+                <dt data-en="Achievement" data-zh="成就">Achievement</dt>
+                <dd data-en="Centralized administrative reforms and court expansion" data-zh="推动行政集权改革并扩建宫廷空间">Centralized administrative reforms and court expansion</dd>
+                <dt data-en="Historical status" data-zh="历史地位">Historical status</dt>
+                <dd data-en="Patron of renewal, icon of dynastic stability" data-zh="中兴的主持者，王朝稳定的象征">Patron of renewal, icon of dynastic stability</dd>
+                <dt data-en="Reference" data-zh="文献引用">Reference</dt>
+                <dd data-en="Imperial decrees vol. IV, portrait collection A12" data-zh="《皇帝诏令》第四卷，肖像收藏 A12">Imperial decrees vol. IV, portrait collection A12</dd>
               </dl>
-              <blockquote>"Order is the visible form of greatness."</blockquote>
+              <blockquote data-en="&quot;Order is the visible form of greatness.&quot;" data-zh="“秩序是伟大的可见形式。”">&quot;Order is the visible form of greatness.&quot;</blockquote>
             </article>
 
             <article class="figure-card">
               <div class="figure-portrait" aria-hidden="true"></div>
               <div>
-                <span class="card-kicker">General</span>
-                <h3>Marshal Ren</h3>
+                <span class="card-kicker" data-en="General" data-zh="将军">General</span>
+                <h3 data-en="Marshal Ren" data-zh="任元帅">Marshal Ren</h3>
               </div>
               <dl class="meta-list">
-                <dt>Years</dt>
+                <dt data-en="Years" data-zh="年份">Years</dt>
                 <dd>1784-1841</dd>
-                <dt>Achievement</dt>
-                <dd>Rail corridor security campaigns and frontier consolidation</dd>
-                <dt>Historical status</dt>
-                <dd>Strategic architect of national integration</dd>
-                <dt>Reference</dt>
-                <dd>War maps series C, staff reports folio 9</dd>
+                <dt data-en="Achievement" data-zh="成就">Achievement</dt>
+                <dd data-en="Rail corridor security campaigns and frontier consolidation" data-zh="主导铁路走廊安保行动与边疆整合">Rail corridor security campaigns and frontier consolidation</dd>
+                <dt data-en="Historical status" data-zh="历史地位">Historical status</dt>
+                <dd data-en="Strategic architect of national integration" data-zh="国家整合战略的设计者">Strategic architect of national integration</dd>
+                <dt data-en="Reference" data-zh="文献引用">Reference</dt>
+                <dd data-en="War maps series C, staff reports folio 9" data-zh="战争地图 C 系列，参谋报告第 9 册">War maps series C, staff reports folio 9</dd>
               </dl>
-              <blockquote>"Territory remembers those who secured it."</blockquote>
+              <blockquote data-en="&quot;Territory remembers those who secured it.&quot;" data-zh="“疆土会记住那些守住它的人。”">&quot;Territory remembers those who secured it.&quot;</blockquote>
             </article>
 
             <article class="figure-card">
               <div class="figure-portrait" aria-hidden="true"></div>
               <div>
-                <span class="card-kicker">Reformer</span>
-                <h3>Minister Qiao</h3>
+                <span class="card-kicker" data-en="Reformer" data-zh="改革者">Reformer</span>
+                <h3 data-en="Minister Qiao" data-zh="乔大臣">Minister Qiao</h3>
               </div>
               <dl class="meta-list">
-                <dt>Years</dt>
+                <dt data-en="Years" data-zh="年份">Years</dt>
                 <dd>1890-1958</dd>
-                <dt>Achievement</dt>
-                <dd>Industrial modernization and statistical governance programs</dd>
-                <dt>Historical status</dt>
-                <dd>Voice of progress, planner of the modern state</dd>
-                <dt>Reference</dt>
-                <dd>Cabinet minutes archive F, modernization commission papers</dd>
+                <dt data-en="Achievement" data-zh="成就">Achievement</dt>
+                <dd data-en="Industrial modernization and statistical governance programs" data-zh="推动工业现代化与统计治理方案">Industrial modernization and statistical governance programs</dd>
+                <dt data-en="Historical status" data-zh="历史地位">Historical status</dt>
+                <dd data-en="Voice of progress, planner of the modern state" data-zh="进步话语的代表者，现代国家的规划者">Voice of progress, planner of the modern state</dd>
+                <dt data-en="Reference" data-zh="文献引用">Reference</dt>
+                <dd data-en="Cabinet minutes archive F, modernization commission papers" data-zh="内阁会议记录 F 档，现代化委员会文书">Cabinet minutes archive F, modernization commission papers</dd>
               </dl>
-              <blockquote>"A nation advances when every measure can be counted."</blockquote>
+              <blockquote data-en="&quot;A nation advances when every measure can be counted.&quot;" data-zh="“当一切都能被计量时，国家便前进了。”">&quot;A nation advances when every measure can be counted.&quot;</blockquote>
             </article>
           </div>
         </section>
@@ -110,10 +115,10 @@
         <section class="section-block">
           <div class="section-head">
             <div>
-              <span class="eyebrow">Contrast device</span>
-              <h2>Why This Page Is So Complete</h2>
+              <span class="eyebrow" data-en="Contrast device" data-zh="对比装置">Contrast device</span>
+              <h2 data-en="Why This Page Is So Complete" data-zh="为什么这个页面如此完整">Why This Page Is So Complete</h2>
             </div>
-            <p>
+            <p data-en="Its completeness is not neutral. It prepares the eye to notice what later pages cannot provide for workers: no portrait, no quote, no authored ambition, no stable biography." data-zh="它的完整性并不无辜。它在训练观看者去注意：后面的工人页面无法提供这些东西，没有肖像，没有引言，没有作者性的雄心，也没有稳定的传记。">
               Its completeness is not neutral. It prepares the eye to notice what later pages cannot provide for workers:
               no portrait, no quote, no authored ambition, no stable biography.
             </p>
@@ -123,8 +128,8 @@
 
       <footer class="footer">
         <div class="footer-line">
-          <span>Records prioritized by office, rank, and authorship.</span>
-          <a class="muted-link" href="workers.html">View uncatalogued lives</a>
+          <span data-en="Records prioritized by office, rank, and authorship." data-zh="档案优先保存官职、等级与作者性。">Records prioritized by office, rank, and authorship.</span>
+          <a class="muted-link" href="workers.html" data-en="View uncatalogued lives" data-zh="查看未被编目的生命">View uncatalogued lives</a>
         </div>
       </footer>
     </div>

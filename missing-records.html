@@ -5,30 +5,35 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Missing Records | The Archive of Civilization</title>
     <link rel="stylesheet" href="styles.css" />
+    <script defer src="script.js"></script>
   </head>
-  <body>
+  <body data-page="missing">
     <div class="site-shell">
       <header class="topbar">
         <div class="topbar-inner">
           <a class="brand" href="index.html">
-            <span class="brand-mark">The Archive of Civilization</span>
-            <span class="brand-sub">National Historical Digital Repository</span>
+            <span class="brand-mark" data-en="The Archive of Civilization" data-zh="文明档案馆">The Archive of Civilization</span>
+            <span class="brand-sub" data-en="National Historical Digital Repository" data-zh="国家历史数字档案馆">National Historical Digital Repository</span>
           </a>
           <nav class="main-nav" aria-label="Main navigation">
-            <a class="is-primary" href="index.html">Home</a>
-            <a class="is-primary" href="figures.html">Great Figures</a>
-            <a class="is-primary" href="projects.html">Historic Projects</a>
-            <a class="is-primary" href="missing-records.html" aria-current="page">Archive Rooms</a>
-            <a class="is-buried" href="workers.html">Uncatalogued Materials</a>
+            <a class="is-primary" href="index.html" data-en="Home" data-zh="首页">Home</a>
+            <a class="is-primary" href="figures.html" data-en="Great Figures" data-zh="伟人档案">Great Figures</a>
+            <a class="is-primary" href="projects.html" data-en="Historic Projects" data-zh="历史工程">Historic Projects</a>
+            <a class="is-primary" href="missing-records.html" aria-current="page" data-en="Archive Rooms" data-zh="空白档案室">Archive Rooms</a>
+            <a class="is-buried" href="workers.html" data-en="Uncatalogued Materials" data-zh="未编目材料">Uncatalogued Materials</a>
+            <div class="language-switcher" aria-label="Language switcher">
+              <button type="button" data-lang="en">EN</button>
+              <button type="button" data-lang="zh">中文</button>
+            </div>
           </nav>
         </div>
       </header>
 
       <section class="page-hero">
         <div class="page-hero-card">
-          <span class="eyebrow">Archive void</span>
-          <h1>Missing Records</h1>
-          <p class="lead">
+          <span class="eyebrow" data-en="Archive void" data-zh="档案空洞">Archive void</span>
+          <h1 data-en="Missing Records" data-zh="空白档案室">Missing Records</h1>
+          <p class="lead" data-en="The blank space is not innocent. These absences were produced by what institutions chose to keep, index, and honor." data-zh="空白并不无辜。这些缺失，是制度决定保留什么、索引什么、尊重什么之后制造出来的结果。">
             The blank space is not innocent. These absences were produced by what institutions chose to keep,
             index, and honor.
           </p>
@@ -39,54 +44,54 @@
         <section class="section-block">
           <div class="section-head">
             <div>
-              <span class="eyebrow">Closed drawers</span>
-              <h2>Archive Room 7</h2>
+              <span class="eyebrow" data-en="Closed drawers" data-zh="关闭的抽屉">Closed drawers</span>
+              <h2 data-en="Archive Room 7" data-zh="档案室 7">Archive Room 7</h2>
             </div>
-            <p>
+            <p data-en="Most drawers do not open. When they do, they reveal the rationale of omission more clearly than any surviving record." data-zh="大多数抽屉都打不开。即便打开，它们显露出的不是内容，而是删减与遗漏的理由。">
               Most drawers do not open. When they do, they reveal the rationale of omission more clearly than any surviving record.
             </p>
           </div>
 
           <div class="drawer-grid">
             <article class="drawer is-locked">
-              <span class="drawer-state">locked drawer</span>
-              <h3>Peasant testimony</h3>
-              <p class="drawer-note">No surviving document.</p>
+              <span class="drawer-state" data-en="locked drawer" data-zh="抽屉锁定">locked drawer</span>
+              <h3 data-en="Peasant testimony" data-zh="农民证词">Peasant testimony</h3>
+              <p class="drawer-note" data-en="No surviving document." data-zh="无存留文献。">No surviving document.</p>
             </article>
             <article class="drawer is-locked">
-              <span class="drawer-state">locked drawer</span>
-              <h3>Servant correspondence</h3>
-              <p class="drawer-note">Not deemed historically significant.</p>
+              <span class="drawer-state" data-en="locked drawer" data-zh="抽屉锁定">locked drawer</span>
+              <h3 data-en="Servant correspondence" data-zh="仆役通信">Servant correspondence</h3>
+              <p class="drawer-note" data-en="Not deemed historically significant." data-zh="未被认定具有历史意义。">Not deemed historically significant.</p>
             </article>
             <article class="drawer">
-              <span class="drawer-state">opened</span>
-              <h3>Women's labor</h3>
-              <p class="drawer-note">Recorded only in productivity totals and household expense entries.</p>
+              <span class="drawer-state" data-en="opened" data-zh="已打开">opened</span>
+              <h3 data-en="Women's labor" data-zh="女性劳动">Women's labor</h3>
+              <p class="drawer-note" data-en="Recorded only in productivity totals and household expense entries." data-zh="只出现在产量总数和家庭支出条目中。">Recorded only in productivity totals and household expense entries.</p>
             </article>
             <article class="drawer is-locked">
-              <span class="drawer-state">locked drawer</span>
-              <h3>Migration records</h3>
-              <p class="drawer-note">Lost in official transfer.</p>
+              <span class="drawer-state" data-en="locked drawer" data-zh="抽屉锁定">locked drawer</span>
+              <h3 data-en="Migration records" data-zh="迁移记录">Migration records</h3>
+              <p class="drawer-note" data-en="Lost in official transfer." data-zh="在官方移交中遗失。">Lost in official transfer.</p>
             </article>
             <article class="drawer is-locked">
-              <span class="drawer-state">locked drawer</span>
-              <h3>Oral histories</h3>
-              <p class="drawer-note">Never archived.</p>
+              <span class="drawer-state" data-en="locked drawer" data-zh="抽屉锁定">locked drawer</span>
+              <h3 data-en="Oral histories" data-zh="口述历史">Oral histories</h3>
+              <p class="drawer-note" data-en="Never archived." data-zh="从未入档。">Never archived.</p>
             </article>
             <article class="drawer">
-              <span class="drawer-state">opened</span>
-              <h3>Death counts</h3>
-              <p class="drawer-note">Numbers preserved without names.</p>
+              <span class="drawer-state" data-en="opened" data-zh="已打开">opened</span>
+              <h3 data-en="Death counts" data-zh="死亡统计">Death counts</h3>
+              <p class="drawer-note" data-en="Numbers preserved without names." data-zh="数字被保留下来，姓名没有。">Numbers preserved without names.</p>
             </article>
             <article class="drawer is-locked">
-              <span class="drawer-state">locked drawer</span>
-              <h3>Domestic disputes</h3>
-              <p class="drawer-note">Filed as incidental, later discarded.</p>
+              <span class="drawer-state" data-en="locked drawer" data-zh="抽屉锁定">locked drawer</span>
+              <h3 data-en="Domestic disputes" data-zh="家务冲突">Domestic disputes</h3>
+              <p class="drawer-note" data-en="Filed as incidental, later discarded." data-zh="被归为附带事项，后被丢弃。">Filed as incidental, later discarded.</p>
             </article>
             <article class="drawer is-locked">
-              <span class="drawer-state">locked drawer</span>
-              <h3>Casual labor settlements</h3>
-              <p class="drawer-note">Not indexed at person level.</p>
+              <span class="drawer-state" data-en="locked drawer" data-zh="抽屉锁定">locked drawer</span>
+              <h3 data-en="Casual labor settlements" data-zh="零工结算">Casual labor settlements</h3>
+              <p class="drawer-note" data-en="Not indexed at person level." data-zh="没有按个人层级建立索引。">Not indexed at person level.</p>
             </article>
           </div>
         </section>
@@ -94,33 +99,33 @@
         <section class="section-block is-dark">
           <div class="section-head">
             <div>
-              <span class="eyebrow">Thesis wall</span>
-              <h2>The Blank Is Manufactured</h2>
+              <span class="eyebrow" data-en="Thesis wall" data-zh="命题之墙">Thesis wall</span>
+              <h2 data-en="The Blank Is Manufactured" data-zh="空白是被制造出来的">The Blank Is Manufactured</h2>
             </div>
-            <p>
+            <p data-en="The final page strips away visual confidence and leaves a wall of administrative disappearance." data-zh="最后一页剥离了前面的视觉自信，只留下由行政性消失构成的一整面墙。">
               The final page strips away visual confidence and leaves a wall of administrative disappearance.
             </p>
           </div>
 
           <div class="fragment-wall">
-            <article class="fragment"><p>peasant testimony missing</p></article>
-            <article class="fragment"><p>servant correspondence not preserved</p></article>
-            <article class="fragment"><p>women's labor unarchived</p></article>
-            <article class="fragment"><p>migration records incomplete</p></article>
-            <article class="fragment"><p>oral histories absent</p></article>
-            <article class="fragment"><p>death counts without names</p></article>
-            <article class="fragment"><p>household work merged into expense sheets</p></article>
-            <article class="fragment"><p>file destroyed during transfer</p></article>
-            <article class="fragment"><p>recorded only as quantity</p></article>
-            <article class="fragment"><p>never entered into the central index</p></article>
+            <article class="fragment"><p data-en="peasant testimony missing" data-zh="农民证词缺失">peasant testimony missing</p></article>
+            <article class="fragment"><p data-en="servant correspondence not preserved" data-zh="仆役通信未被保存">servant correspondence not preserved</p></article>
+            <article class="fragment"><p data-en="women's labor unarchived" data-zh="女性劳动未入档">women's labor unarchived</p></article>
+            <article class="fragment"><p data-en="migration records incomplete" data-zh="迁移记录不完整">migration records incomplete</p></article>
+            <article class="fragment"><p data-en="oral histories absent" data-zh="口述历史缺席">oral histories absent</p></article>
+            <article class="fragment"><p data-en="death counts without names" data-zh="死亡数字没有姓名">death counts without names</p></article>
+            <article class="fragment"><p data-en="household work merged into expense sheets" data-zh="家务劳动被合并进支出表">household work merged into expense sheets</p></article>
+            <article class="fragment"><p data-en="file destroyed during transfer" data-zh="文件在移交中被毁">file destroyed during transfer</p></article>
+            <article class="fragment"><p data-en="recorded only as quantity" data-zh="仅以数量形式被记录">recorded only as quantity</p></article>
+            <article class="fragment"><p data-en="never entered into the central index" data-zh="从未进入中央索引">never entered into the central index</p></article>
           </div>
         </section>
       </main>
 
       <footer class="footer">
         <div class="footer-line">
-          <span>The archive ends by revealing its own method.</span>
-          <a class="muted-link" href="index.html">Return to the official entrance</a>
+          <span data-en="The archive ends by revealing its own method." data-zh="档案馆最终暴露了它自己的方法。">The archive ends by revealing its own method.</span>
+          <a class="muted-link" href="index.html" data-en="Return to the official entrance" data-zh="回到官方入口">Return to the official entrance</a>
         </div>
       </footer>
     </div>

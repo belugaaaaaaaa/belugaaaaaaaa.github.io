@@ -5,30 +5,35 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Historic Projects | The Archive of Civilization</title>
     <link rel="stylesheet" href="styles.css" />
+    <script defer src="script.js"></script>
   </head>
-  <body>
+  <body data-page="projects">
     <div class="site-shell">
       <header class="topbar">
         <div class="topbar-inner">
           <a class="brand" href="index.html">
-            <span class="brand-mark">The Archive of Civilization</span>
-            <span class="brand-sub">National Historical Digital Repository</span>
+            <span class="brand-mark" data-en="The Archive of Civilization" data-zh="文明档案馆">The Archive of Civilization</span>
+            <span class="brand-sub" data-en="National Historical Digital Repository" data-zh="国家历史数字档案馆">National Historical Digital Repository</span>
           </a>
           <nav class="main-nav" aria-label="Main navigation">
-            <a class="is-primary" href="index.html">Home</a>
-            <a class="is-primary" href="figures.html">Great Figures</a>
-            <a class="is-primary" href="projects.html" aria-current="page">Historic Projects</a>
-            <a class="is-primary" href="missing-records.html">Archive Rooms</a>
-            <a class="is-buried" href="workers.html">Auxiliary Labor Files</a>
+            <a class="is-primary" href="index.html" data-en="Home" data-zh="首页">Home</a>
+            <a class="is-primary" href="figures.html" data-en="Great Figures" data-zh="伟人档案">Great Figures</a>
+            <a class="is-primary" href="projects.html" aria-current="page" data-en="Historic Projects" data-zh="历史工程">Historic Projects</a>
+            <a class="is-primary" href="missing-records.html" data-en="Archive Rooms" data-zh="空白档案室">Archive Rooms</a>
+            <a class="is-buried" href="workers.html" data-en="Auxiliary Labor Files" data-zh="劳动辅助档案">Auxiliary Labor Files</a>
+            <div class="language-switcher" aria-label="Language switcher">
+              <button type="button" data-lang="en">EN</button>
+              <button type="button" data-lang="zh">中文</button>
+            </div>
           </nav>
         </div>
       </header>
 
       <section class="page-hero">
         <div class="page-hero-card">
-          <span class="eyebrow">Monumental works</span>
-          <h1>Historic Projects</h1>
-          <p class="lead">
+          <span class="eyebrow" data-en="Monumental works" data-zh="纪念性工程">Monumental works</span>
+          <h1 data-en="Historic Projects" data-zh="历史工程">Historic Projects</h1>
+          <p class="lead" data-en="Each project first appears in the language of state achievement. Open a record, and another layer appears: labor totals, anonymous deaths, incomplete names, and work without memorialization." data-zh="每个工程最初都以国家成就的语言出现。展开之后，另一层才会显现：劳工总量、匿名死亡、不完整姓名，以及没有被纪念的劳动。">
             Each project first appears in the language of state achievement. Open a record, and another layer appears:
             labor totals, anonymous deaths, incomplete names, and work without memorialization.
           </p>
@@ -39,10 +44,10 @@
         <section class="section-block">
           <div class="section-head">
             <div>
-              <span class="eyebrow">Two-layer reading</span>
-              <h2>Monuments And Their Human Substrate</h2>
+              <span class="eyebrow" data-en="Two-layer reading" data-zh="双层阅读">Two-layer reading</span>
+              <h2 data-en="Monuments And Their Human Substrate" data-zh="纪念碑及其背后的人">Monuments And Their Human Substrate</h2>
             </div>
-            <p>
+            <p data-en="This page makes the central argument explicit: we remember the finished monument, but not the people whose bodies made it possible." data-zh="这一页把核心论点直接说出来：我们记住了已经完成的纪念碑，却忘记了那些用身体把它建起来的人。">
               This page makes the central argument explicit: we remember the finished monument, but not the people whose
               bodies made it possible.
             </p>
@@ -50,57 +55,57 @@
 
           <div class="project-grid">
             <article class="project-card">
-              <span class="card-kicker">Palace Construction</span>
-              <h3>Seat of Renewal</h3>
-              <p>The official record celebrates architectural grace, courtly order, and imperial magnificence.</p>
+              <span class="card-kicker" data-en="Palace Construction" data-zh="宫殿建设">Palace Construction</span>
+              <h3 data-en="Seat of Renewal" data-zh="中兴之座">Seat of Renewal</h3>
+              <p data-en="The official record celebrates architectural grace, courtly order, and imperial magnificence." data-zh="官方记录赞美的是建筑之美、宫廷秩序与帝国威仪。">The official record celebrates architectural grace, courtly order, and imperial magnificence.</p>
               <details>
-                <summary>Open counter-record</summary>
+                <summary data-en="Open counter-record" data-zh="展开另一层记录">Open counter-record</summary>
                 <div class="counter">
-                  <div>Thousands of laborers moved stone, timber, and ceremonial materials.</div>
-                  <div>Deaths entered as work loss totals; names largely absent.</div>
-                  <div>Primary trace: quarry payrolls and injury notices, not biographies.</div>
+                  <div data-en="Thousands of laborers moved stone, timber, and ceremonial materials." data-zh="成千上万名劳动者搬运石料、木材与礼制用品。">Thousands of laborers moved stone, timber, and ceremonial materials.</div>
+                  <div data-en="Deaths entered as work loss totals; names largely absent." data-zh="死亡被记作劳动力损失总数，姓名大多缺席。">Deaths entered as work loss totals; names largely absent.</div>
+                  <div data-en="Primary trace: quarry payrolls and injury notices, not biographies." data-zh="主要痕迹是采石场工资册和伤病通知，而不是传记。">Primary trace: quarry payrolls and injury notices, not biographies.</div>
                 </div>
               </details>
             </article>
 
             <article class="project-card">
-              <span class="card-kicker">Canal Building</span>
-              <h3>Artery of Commerce</h3>
-              <p>The state narrative praises integration, efficiency, prosperity, and engineering foresight.</p>
+              <span class="card-kicker" data-en="Canal Building" data-zh="运河建设">Canal Building</span>
+              <h3 data-en="Artery of Commerce" data-zh="商业动脉">Artery of Commerce</h3>
+              <p data-en="The state narrative praises integration, efficiency, prosperity, and engineering foresight." data-zh="国家叙事赞美的是整合、效率、繁荣与工程远见。">The state narrative praises integration, efficiency, prosperity, and engineering foresight.</p>
               <details>
-                <summary>Open counter-record</summary>
+                <summary data-en="Open counter-record" data-zh="展开另一层记录">Open counter-record</summary>
                 <div class="counter">
-                  <div>Diggers, haulers, and temporary camp workers appear as grouped tallies.</div>
-                  <div>Forced and seasonal labor blurred together in official summaries.</div>
-                  <div>Oral testimonies absent from preserved state files.</div>
+                  <div data-en="Diggers, haulers, and temporary camp workers appear as grouped tallies." data-zh="开挖工、搬运工和临时营地劳工只以群体统计出现。">Diggers, haulers, and temporary camp workers appear as grouped tallies.</div>
+                  <div data-en="Forced and seasonal labor blurred together in official summaries." data-zh="强制劳动与季节性劳动在官方摘要中被混为一体。">Forced and seasonal labor blurred together in official summaries.</div>
+                  <div data-en="Oral testimonies absent from preserved state files." data-zh="口述证词没有进入被保存下来的国家档案。">Oral testimonies absent from preserved state files.</div>
                 </div>
               </details>
             </article>
 
             <article class="project-card">
-              <span class="card-kicker">Railway Expansion</span>
-              <h3>Line of Modernization</h3>
-              <p>National maps frame rail construction as inevitable progress and strategic cohesion.</p>
+              <span class="card-kicker" data-en="Railway Expansion" data-zh="铁路扩张">Railway Expansion</span>
+              <h3 data-en="Line of Modernization" data-zh="现代化之线">Line of Modernization</h3>
+              <p data-en="National maps frame rail construction as inevitable progress and strategic cohesion." data-zh="国家地图把铁路建设叙述成不可避免的进步与战略整合。">National maps frame rail construction as inevitable progress and strategic cohesion.</p>
               <details>
-                <summary>Open counter-record</summary>
+                <summary data-en="Open counter-record" data-zh="展开另一层记录">Open counter-record</summary>
                 <div class="counter">
-                  <div>Track-laying crews counted by labor unit, not by person.</div>
-                  <div>Accident reports survive; many identities do not.</div>
-                  <div>Women providing food, washing, and supply work remain peripheral to the file.</div>
+                  <div data-en="Track-laying crews counted by labor unit, not by person." data-zh="铺轨队以劳工单位计数，而不是按个人计数。">Track-laying crews counted by labor unit, not by person.</div>
+                  <div data-en="Accident reports survive; many identities do not." data-zh="事故报告留了下来，很多人的身份却没有。">Accident reports survive; many identities do not.</div>
+                  <div data-en="Women providing food, washing, and supply work remain peripheral to the file." data-zh="负责送饭、清洗与后勤的女性劳动仍停留在档案边缘。">Women providing food, washing, and supply work remain peripheral to the file.</div>
                 </div>
               </details>
             </article>
 
             <article class="project-card">
-              <span class="card-kicker">Wartime Production</span>
-              <h3>National Emergency Output</h3>
-              <p>Official exhibits focus on patriotic efficiency, industrial discipline, and strategic necessity.</p>
+              <span class="card-kicker" data-en="Wartime Production" data-zh="战时生产">Wartime Production</span>
+              <h3 data-en="National Emergency Output" data-zh="国家紧急产能">National Emergency Output</h3>
+              <p data-en="Official exhibits focus on patriotic efficiency, industrial discipline, and strategic necessity." data-zh="官方展陈强调爱国效率、工业纪律与战略必要性。">Official exhibits focus on patriotic efficiency, industrial discipline, and strategic necessity.</p>
               <details>
-                <summary>Open counter-record</summary>
+                <summary data-en="Open counter-record" data-zh="展开另一层记录">Open counter-record</summary>
                 <div class="counter">
-                  <div>Workers survive in charts, quotas, and output graphs.</div>
-                  <div>Factory illness and injury were often treated as administrative costs.</div>
-                  <div>Most labor remains recoverable only as quantity.</div>
+                  <div data-en="Workers survive in charts, quotas, and output graphs." data-zh="工人只在图表、配额和产量曲线里幸存下来。">Workers survive in charts, quotas, and output graphs.</div>
+                  <div data-en="Factory illness and injury were often treated as administrative costs." data-zh="工厂中的疾病与工伤常被当作行政成本处理。">Factory illness and injury were often treated as administrative costs.</div>
+                  <div data-en="Most labor remains recoverable only as quantity." data-zh="大多数劳动仍只能作为数量被勉强恢复出来。">Most labor remains recoverable only as quantity.</div>
                 </div>
               </details>
             </article>
@@ -110,8 +115,8 @@
 
       <footer class="footer">
         <div class="footer-line">
-          <span>History often preserves achievement more carefully than labor.</span>
-          <a class="muted-link" href="missing-records.html">Enter the blank archive room</a>
+          <span data-en="History often preserves achievement more carefully than labor." data-zh="历史往往比起劳动，更仔细地保存成就。">History often preserves achievement more carefully than labor.</span>
+          <a class="muted-link" href="missing-records.html" data-en="Enter the blank archive room" data-zh="进入空白档案室">Enter the blank archive room</a>
         </div>
       </footer>
     </div>

@@ -11,95 +11,99 @@
     <link rel="stylesheet" href="styles.css" />
     <script defer src="script.js"></script>
   </head>
-  <body>
+  <body data-page="index">
     <div class="site-shell">
       <header class="topbar">
         <div class="topbar-inner">
           <a class="brand" href="index.html">
-            <span class="brand-mark">The Archive of Civilization</span>
-            <span class="brand-sub">National Historical Digital Repository</span>
+            <span class="brand-mark" data-en="The Archive of Civilization" data-zh="文明档案馆">The Archive of Civilization</span>
+            <span class="brand-sub" data-en="National Historical Digital Repository" data-zh="国家历史数字档案馆">National Historical Digital Repository</span>
           </a>
           <nav class="main-nav" aria-label="Main navigation">
-            <a class="is-primary" href="index.html" aria-current="page">Home</a>
-            <a class="is-primary" href="figures.html">Great Figures</a>
-            <a class="is-primary" href="projects.html">Historic Projects</a>
-            <a class="is-primary" href="missing-records.html">Archive Rooms</a>
-            <a class="is-buried" href="workers.html">Other Records</a>
+            <a class="is-primary" href="index.html" aria-current="page" data-en="Home" data-zh="首页">Home</a>
+            <a class="is-primary" href="figures.html" data-en="Great Figures" data-zh="伟人档案">Great Figures</a>
+            <a class="is-primary" href="projects.html" data-en="Historic Projects" data-zh="历史工程">Historic Projects</a>
+            <a class="is-primary" href="missing-records.html" data-en="Archive Rooms" data-zh="空白档案室">Archive Rooms</a>
+            <a class="is-buried" href="workers.html" data-en="Other Records" data-zh="其他记录">Other Records</a>
+            <div class="language-switcher" aria-label="Language switcher">
+              <button type="button" data-lang="en">EN</button>
+              <button type="button" data-lang="zh">中文</button>
+            </div>
           </nav>
         </div>
       </header>
 
       <section class="hero">
         <article class="hero-card">
-          <span class="eyebrow">Official exhibition sequence</span>
+          <span class="eyebrow" data-en="Official exhibition sequence" data-zh="官方展陈顺序">Official exhibition sequence</span>
           <h1 class="display-title">
-            The Archive
+            <span data-en="The Archive" data-zh="文明档案">The Archive</span>
             <br />
-            <span class="glitch-line" data-alt="of Civilization">of Civilization</span>
+            <span class="glitch-line" data-alt="of Civilization" data-en="of Civilization" data-zh="馆藏系统">of Civilization</span>
           </h1>
-          <p class="lead">
+          <p class="lead" data-en="Enter a polished national archive of dynasties, campaigns, decrees, ceremonies, and reforms. Its interface is precise, its categories authoritative, and its confidence almost complete." data-zh="进入一个被精心修饰的国家档案馆：王朝、战争、诏令、典礼与改革都被整齐展示。它的界面精确，分类权威，几乎显得无懈可击。">
             Enter a polished national archive of dynasties, campaigns, decrees, ceremonies, and reforms.
             Its interface is precise, its categories authoritative, and its confidence almost complete.
           </p>
           <div class="hero-grid" aria-label="Featured official records">
             <div class="summary-chip">
-              <span class="chip-label">Dynastic timeline</span>
-              <span class="chip-value">Unified succession, restoration, prosperity, reform</span>
+              <span class="chip-label" data-en="Dynastic timeline" data-zh="王朝时间线">Dynastic timeline</span>
+              <span class="chip-value" data-en="Unified succession, restoration, prosperity, reform" data-zh="统一继承、复兴、中兴、改革">Unified succession, restoration, prosperity, reform</span>
             </div>
             <div class="summary-chip">
-              <span class="chip-label">Imperial portraiture</span>
-              <span class="chip-value">Indexed, illuminated, and preserved in ceremonial order</span>
+              <span class="chip-label" data-en="Imperial portraiture" data-zh="帝王肖像">Imperial portraiture</span>
+              <span class="chip-value" data-en="Indexed, illuminated, and preserved in ceremonial order" data-zh="被编目、被装裱、按礼制秩序妥善保存">Indexed, illuminated, and preserved in ceremonial order</span>
             </div>
             <div class="summary-chip">
-              <span class="chip-label">Military campaigns</span>
-              <span class="chip-value">Maps, banners, dispatches, victory notices, casualty totals</span>
+              <span class="chip-label" data-en="Military campaigns" data-zh="军事战役">Military campaigns</span>
+              <span class="chip-value" data-en="Maps, banners, dispatches, victory notices, casualty totals" data-zh="战争地图、军旗、公文、捷报、伤亡统计">Maps, banners, dispatches, victory notices, casualty totals</span>
             </div>
             <div class="summary-chip">
-              <span class="chip-label">Architectural legacy</span>
-              <span class="chip-value">Palaces, canals, railways, halls of state, monuments</span>
+              <span class="chip-label" data-en="Architectural legacy" data-zh="建筑遗产">Architectural legacy</span>
+              <span class="chip-value" data-en="Palaces, canals, railways, halls of state, monuments" data-zh="宫殿、运河、铁路、礼制建筑、纪念碑">Palaces, canals, railways, halls of state, monuments</span>
             </div>
           </div>
 
           <div class="project-hover-board">
             <div class="hover-note">
-              <strong>Palace Expansion</strong>
-              <p>Marble halls, ordered courtyards, inscriptions of renewal and dynastic stability.</p>
-              <div class="annotation">Built by unnamed laborers.</div>
+              <strong data-en="Palace Expansion" data-zh="宫殿扩建">Palace Expansion</strong>
+              <p data-en="Marble halls, ordered courtyards, inscriptions of renewal and dynastic stability." data-zh="大理石殿堂、整齐庭院，以及关于中兴与王朝稳定的铭文。">Marble halls, ordered courtyards, inscriptions of renewal and dynastic stability.</p>
+              <div class="annotation" data-en="Built by unnamed laborers." data-zh="由无名劳动者建成。">Built by unnamed laborers.</div>
             </div>
             <div class="hover-note">
-              <strong>National Railway</strong>
-              <p>Modernity, speed, territorial integration, the visible promise of a stronger state.</p>
-              <div class="annotation">Thousands laid the tracks; few were recorded.</div>
+              <strong data-en="National Railway" data-zh="国家铁路">National Railway</strong>
+              <p data-en="Modernity, speed, territorial integration, the visible promise of a stronger state." data-zh="现代性、速度、疆域整合，以及一个更强国家的可见承诺。">Modernity, speed, territorial integration, the visible promise of a stronger state.</p>
+              <div class="annotation" data-en="Thousands laid the tracks; few were recorded." data-zh="成千上万人铺设了铁轨，但被记录下来的寥寥无几。">Thousands laid the tracks; few were recorded.</div>
             </div>
             <div class="hover-note">
-              <strong>War Memorial</strong>
-              <p>Triumphal stone, command citations, strategic genius, official memory curated in bronze.</p>
-              <div class="annotation">The dead are counted. Most are not named.</div>
+              <strong data-en="War Memorial" data-zh="战争纪念碑">War Memorial</strong>
+              <p data-en="Triumphal stone, command citations, strategic genius, official memory curated in bronze." data-zh="凯旋的石材、将领嘉奖、战略天才，以及被青铜固定下来的官方记忆。">Triumphal stone, command citations, strategic genius, official memory curated in bronze.</p>
+              <div class="annotation" data-en="The dead are counted. Most are not named." data-zh="死者被统计，但大多数没有名字。">The dead are counted. Most are not named.</div>
             </div>
             <div class="hover-note">
-              <strong>Canal System</strong>
-              <p>Hydraulic mastery, trade efficiency, national integration, civilizational achievement.</p>
-              <div class="annotation">The monument remained. The workers vanished into statistics.</div>
+              <strong data-en="Canal System" data-zh="运河系统">Canal System</strong>
+              <p data-en="Hydraulic mastery, trade efficiency, national integration, civilizational achievement." data-zh="水利治理、贸易效率、国家整合与所谓文明成就。">Hydraulic mastery, trade efficiency, national integration, civilizational achievement.</p>
+              <div class="annotation" data-en="The monument remained. The workers vanished into statistics." data-zh="工程留下了，工人则消失在统计数字里。">The monument remained. The workers vanished into statistics.</div>
             </div>
           </div>
 
-          <a class="subtle-entry" href="workers.html">Auxiliary Labor Files</a>
+          <a class="subtle-entry" href="workers.html" data-en="Auxiliary Labor Files" data-zh="劳动辅助档案">Auxiliary Labor Files</a>
         </article>
 
         <aside class="hero-aside">
           <section class="authority-panel">
             <div class="authority-visual" aria-hidden="true"></div>
-            <span class="badge">Featured record</span>
-            <h2>Age of Renewal</h2>
-            <p class="lead">
+            <span class="badge" data-en="Featured record" data-zh="精选档案">Featured record</span>
+            <h2 data-en="Age of Renewal" data-zh="中兴时代">Age of Renewal</h2>
+            <p class="lead" data-en="Court imagery, administrative order, and a language of greatness shape the official front page." data-zh="宫廷图像、行政秩序与“伟大时代”的语言，共同构成了官方首页。">
               Court imagery, administrative order, and a language of greatness shape the official front page.
             </p>
           </section>
 
           <section class="search-panel">
-            <span class="eyebrow">Catalogue search</span>
-            <h3>Indexed memory</h3>
-            <p>Search terms reveal what the archive has already decided is worth preserving.</p>
+            <span class="eyebrow" data-en="Catalogue search" data-zh="档案检索">Catalogue search</span>
+            <h3 data-en="Indexed memory" data-zh="被索引的记忆">Indexed memory</h3>
+            <p data-en="Search terms reveal what the archive has already decided is worth preserving." data-zh="检索词本身会暴露这个档案系统早已决定什么值得被保存。">Search terms reveal what the archive has already decided is worth preserving.</p>
 
             <div class="tag-row" aria-label="Sample search terms">
               <button class="search-tag" type="button" data-fill="emperor">emperor</button>
@@ -109,8 +113,8 @@
             </div>
 
             <form class="search-bar" data-archive-search>
-              <input type="text" name="query" placeholder="Search by rank, office, labor, or class" />
-              <button type="submit">Search</button>
+              <input type="text" name="query" placeholder="Search by rank, office, labor, or class" data-en-placeholder="Search by rank, office, labor, or class" data-zh-placeholder="按身份、官职、劳动或阶层检索" />
+              <button type="submit" data-en="Search" data-zh="检索">Search</button>
               <div class="search-feedback" data-search-output>
                 <strong>Search the catalogue</strong>
                 <span>Terms like <em>emperor</em> retrieve dense records. Terms like <em>worker</em> return the archive's silence.</span>
@@ -120,8 +124,8 @@
           </section>
 
           <section class="notice-panel">
-            <small>Peripheral note</small>
-            <p>
+            <small data-en="Peripheral note" data-zh="边缘备注">Peripheral note</small>
+            <p data-en="A complete archive is often a complete archive of power. Absence is not always a missing fact; sometimes it is a designed condition." data-zh="一个“完整”的档案馆，往往只是权力的完整档案。空白并不总是事实缺失，它有时是被制造出来的状态。">
               A complete archive is often a complete archive of power. Absence is not always a missing fact;
               sometimes it is a designed condition.
             </p>
@@ -133,10 +137,10 @@
         <section class="section-block">
           <div class="section-head">
             <div>
-              <span class="eyebrow">Front-page narrative</span>
-              <h2>What Official History Displays First</h2>
+              <span class="eyebrow" data-en="Front-page narrative" data-zh="首页叙事">Front-page narrative</span>
+              <h2 data-en="What Official History Displays First" data-zh="官方历史最先展示什么">What Official History Displays First</h2>
             </div>
-            <p>
+            <p data-en="The site deliberately begins with visual abundance: power is easy to browse, easy to admire, and richly indexed." data-zh="这个网站刻意从视觉丰盛开始：权力更容易被浏览，更容易被赞美，也更容易被充分索引。">
               The site deliberately begins with visual abundance: power is easy to browse, easy to admire,
               and richly indexed.
             </p>
@@ -144,20 +148,20 @@
 
           <div class="timeline">
             <article class="timeline-item">
-              <time>Portraits</time>
-              <p>Monarchs, ministers, reformers, commanders rendered as complete and legible subjects.</p>
+              <time data-en="Portraits" data-zh="肖像">Portraits</time>
+              <p data-en="Monarchs, ministers, reformers, commanders rendered as complete and legible subjects." data-zh="君主、重臣、改革者、将领都以完整而清晰的主体形象出现。">Monarchs, ministers, reformers, commanders rendered as complete and legible subjects.</p>
             </article>
             <article class="timeline-item">
-              <time>Wars</time>
-              <p>Campaign maps and directives elevate strategy while flattening the ordinary dead into totals.</p>
+              <time data-en="Wars" data-zh="战争">Wars</time>
+              <p data-en="Campaign maps and directives elevate strategy while flattening the ordinary dead into totals." data-zh="战役地图和作战命令抬高了战略，而把普通死者压缩成了数字。">Campaign maps and directives elevate strategy while flattening the ordinary dead into totals.</p>
             </article>
             <article class="timeline-item">
-              <time>Reforms</time>
-              <p>Policy as authored vision, detached from the labor required to execute it.</p>
+              <time data-en="Reforms" data-zh="改革">Reforms</time>
+              <p data-en="Policy as authored vision, detached from the labor required to execute it." data-zh="政策被写成某位人物的远见，而非无数执行劳动的集合。">Policy as authored vision, detached from the labor required to execute it.</p>
             </article>
             <article class="timeline-item">
-              <time>Prosperity</time>
-              <p>"Golden ages" appear as finished surfaces, not as extraction, discipline, and work.</p>
+              <time data-en="Prosperity" data-zh="盛世">Prosperity</time>
+              <p data-en="&quot;Golden ages&quot; appear as finished surfaces, not as extraction, discipline, and work." data-zh="“盛世”只作为完成后的表面出现，而不是作为抽取、规训与劳动的结果出现。">&quot;Golden ages&quot; appear as finished surfaces, not as extraction, discipline, and work.</p>
             </article>
           </div>
         </section>
@@ -165,10 +169,10 @@
         <section class="section-block is-dark">
           <div class="section-head">
             <div>
-              <span class="eyebrow">Buried navigation</span>
-              <h2>What The Interface Marginalizes</h2>
+              <span class="eyebrow" data-en="Buried navigation" data-zh="被埋藏的导航">Buried navigation</span>
+              <h2 data-en="What The Interface Marginalizes" data-zh="这个界面把什么边缘化了">What The Interface Marginalizes</h2>
             </div>
-            <p>
+            <p data-en="Labor does not appear as a proud category here. It is hidden behind secondary wording, smaller type, and an almost apologetic link." data-zh="劳动并不会以一个自豪的类别出现。它被藏在次级措辞、更小的字号和一个近乎羞怯的链接后面。">
               Labor does not appear as a proud category here. It is hidden behind secondary wording,
               smaller type, and an almost apologetic link.
             </p>
@@ -176,22 +180,22 @@
 
           <div class="record-grid">
             <article class="worker-record">
-              <span class="mini-label">Auxiliary file 01</span>
-              <h3>Worker No. 2041</h3>
-              <p>Helped transport stone for a palace expansion. No personal record survives.</p>
-              <div class="status-strip">Primary trace: quarry delivery ledger fragment</div>
+              <span class="mini-label" data-en="Auxiliary file 01" data-zh="辅助档案 01">Auxiliary file 01</span>
+              <h3 data-en="Worker No. 2041" data-zh="工人编号 2041">Worker No. 2041</h3>
+              <p data-en="Helped transport stone for a palace expansion. No personal record survives." data-zh="曾参与宫殿扩建所需石料运输。没有个人记录保存下来。">Helped transport stone for a palace expansion. No personal record survives.</p>
+              <div class="status-strip" data-en="Primary trace: quarry delivery ledger fragment" data-zh="主要痕迹：采石场运送账册残片">Primary trace: quarry delivery ledger fragment</div>
             </article>
             <article class="worker-record is-burned">
-              <span class="mini-label">Auxiliary file 02</span>
-              <h3>Female Textile Worker</h3>
-              <p>Referenced in factory output statistics only. Name unrecorded.</p>
-              <div class="status-strip">File state: partial burn damage / ink bleed</div>
+              <span class="mini-label" data-en="Auxiliary file 02" data-zh="辅助档案 02">Auxiliary file 02</span>
+              <h3 data-en="Female Textile Worker" data-zh="女性纺织工">Female Textile Worker</h3>
+              <p data-en="Referenced in factory output statistics only. Name unrecorded." data-zh="仅在工厂产量统计中被提及。姓名未记录。">Referenced in factory output statistics only. Name unrecorded.</p>
+              <div class="status-strip" data-en="File state: partial burn damage / ink bleed" data-zh="档案状态：局部烧损 / 墨迹晕染">File state: partial burn damage / ink bleed</div>
             </article>
             <article class="worker-record">
-              <span class="mini-label">Auxiliary file 03</span>
-              <h3>Port Labor Group</h3>
-              <p>Recorded as 118 bodies available for wartime loading. No individual entry opened.</p>
-              <div class="status-strip">Access note: not indexed by person</div>
+              <span class="mini-label" data-en="Auxiliary file 03" data-zh="辅助档案 03">Auxiliary file 03</span>
+              <h3 data-en="Port Labor Group" data-zh="港口劳工组">Port Labor Group</h3>
+              <p data-en="Recorded as 118 bodies available for wartime loading. No individual entry opened." data-zh="在战时装运记录中仅作为“可用劳动力 118 人”出现，没有任何个人条目。">Recorded as 118 bodies available for wartime loading. No individual entry opened.</p>
+              <div class="status-strip" data-en="Access note: not indexed by person" data-zh="访问注记：未按个人建立索引">Access note: not indexed by person</div>
             </article>
           </div>
         </section>
@@ -199,8 +203,8 @@
 
       <footer class="footer">
         <div class="footer-line">
-          <span>The Archive of Civilization</span>
-          <a class="muted-link" href="missing-records.html">Proceed to missing records</a>
+          <span data-en="The Archive of Civilization" data-zh="文明档案馆">The Archive of Civilization</span>
+          <a class="muted-link" href="missing-records.html" data-en="Proceed to missing records" data-zh="进入空白档案室">Proceed to missing records</a>
         </div>
       </footer>
     </div>
