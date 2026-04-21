@@ -1069,6 +1069,8 @@ h3 {
   opacity: 0.48;
   transform: translateX(0);
   transition: opacity 260ms ease, transform 260ms ease, border-color 260ms ease, background 260ms ease;
+  cursor: pointer;
+  outline: none;
 }
 
 .story-step::before {
@@ -1083,6 +1085,17 @@ h3 {
   background: rgba(245, 237, 223, 0.94);
   box-shadow: 0 0 0 8px rgba(245, 237, 223, 0.35);
   transition: transform 260ms ease, background 260ms ease, border-color 260ms ease;
+}
+
+.story-step:hover {
+  opacity: 0.76;
+  border-color: rgba(66, 45, 26, 0.18);
+}
+
+.story-step:focus-visible {
+  opacity: 1;
+  border-color: rgba(113, 67, 34, 0.45);
+  box-shadow: 0 0 0 3px rgba(113, 67, 34, 0.14);
 }
 
 .story-step.is-active {

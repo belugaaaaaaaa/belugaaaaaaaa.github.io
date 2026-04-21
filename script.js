@@ -969,22 +969,13 @@ if (storySteps.length && storyPanels.length) {
     }
   };
 
-  const storyObserver = new IntersectionObserver(
-    (entries) => {
-      const visibleEntries = entries
-        .filter((entry) => entry.isIntersecting)
-        .sort((a, b) => b.intersectionRatio - a.intersectionRatio);
+  storySteps.forEach((step) => {
+    const activate = () => setActiveStoryPanel(step.dataset.panel);
 
-      if (visibleEntries.length) {
-        setActiveStoryPanel(visibleEntries[0].target.dataset.panel);
-      }
-    },
-    {
-      threshold: [0.2, 0.45, 0.7],
-      rootMargin: "-15% 0px -25% 0px"
-    }
-  );
+    step.addEventListener("mouseenter", activate);
+    step.addEventListener("focus", activate);
+    step.addEventListener("click", activate);
+  });
 
-  storySteps.forEach((step) => storyObserver.observe(step));
   setActiveStoryPanel(storySteps[0].dataset.panel);
 }
