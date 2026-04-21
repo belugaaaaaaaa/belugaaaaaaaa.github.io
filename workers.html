@@ -3,24 +3,24 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Unnamed Workers | The Archive of Civilization</title>
+    <title>Unnamed Workers | The Archive of Ming Lives</title>
     <link rel="stylesheet" href="styles.css" />
     <script defer src="script.js"></script>
   </head>
-  <body data-page="workers">
+  <body data-page="workers" data-title-key="workers.title">
     <div class="site-shell">
       <header class="topbar">
         <div class="topbar-inner">
           <a class="brand" href="index.html">
-            <span class="brand-mark" data-en="The Archive of Civilization" data-zh="文明档案馆">The Archive of Civilization</span>
-            <span class="brand-sub" data-en="National Historical Digital Repository" data-zh="国家历史数字档案馆">National Historical Digital Repository</span>
+            <span class="brand-mark" data-i18n="brand.title">The Archive of Ming Lives</span>
+            <span class="brand-sub" data-i18n="brand.subtitle">Ming Dynasty Historical Digital Repository</span>
           </a>
           <nav class="main-nav" aria-label="Main navigation">
-            <a class="is-primary" href="index.html" data-en="Home" data-zh="首页">Home</a>
-            <a class="is-primary" href="figures.html" data-en="Great Figures" data-zh="伟人档案">Great Figures</a>
-            <a class="is-primary" href="projects.html" data-en="Historic Projects" data-zh="历史工程">Historic Projects</a>
-            <a class="is-primary" href="missing-records.html" data-en="Archive Rooms" data-zh="空白档案室">Archive Rooms</a>
-            <a class="is-buried" href="workers.html" aria-current="page" data-en="Uncatalogued Materials" data-zh="未编目材料">Uncatalogued Materials</a>
+            <a class="is-primary" href="index.html" data-i18n="nav.home">Home</a>
+            <a class="is-primary" href="figures.html" data-i18n="nav.figures">Great Figures</a>
+            <a class="is-primary" href="projects.html" data-i18n="nav.projects">Historic Projects</a>
+            <a class="is-primary" href="missing-records.html" data-i18n="nav.missing">Archive Rooms</a>
+            <a class="is-buried" href="workers.html" aria-current="page" data-i18n="nav.workers">Uncatalogued Materials</a>
             <div class="language-switcher" aria-label="Language switcher">
               <button type="button" data-lang="en">EN</button>
               <button type="button" data-lang="zh">中文</button>
@@ -31,11 +31,10 @@
 
       <section class="page-hero">
         <div class="page-hero-card" style="background: var(--worker-panel); color: var(--worker-ink); border-color: rgba(255,245,225,0.09);">
-          <span class="eyebrow" style="color: rgba(243,234,214,0.7);" data-en="Fragmented records" data-zh="残缺记录">Fragmented records</span>
-          <h1 data-en="Unnamed Workers" data-zh="无名劳动者">Unnamed Workers</h1>
-          <p class="lead" style="color: rgba(243,234,214,0.82);" data-en="Here the archive breaks apart. Lives appear as fragments, payroll traces, casualty counts, and damaged files. The missing information is the argument." data-zh="在这里，档案开始破碎。生命只以碎片、工资痕迹、伤亡数字和损坏文件的形式出现。缺失本身就是论点。">
-            Here the archive breaks apart. Lives appear as fragments, payroll traces, casualty counts, and damaged files.
-            The missing information is the argument.
+          <span class="eyebrow" style="color: rgba(243,234,214,0.7);" data-i18n="workers.hero.eyebrow">Fragmented records</span>
+          <h1 data-i18n="workers.hero.title">Unnamed Workers of the Ming</h1>
+          <p class="lead" style="color: rgba(243,234,214,0.82);" data-i18n="workers.hero.body">
+            Here the archive collapses into fragments: payroll scraps, kiln tallies, grain transport rosters, and casualties without names.
           </p>
         </div>
       </section>
@@ -44,65 +43,61 @@
         <section class="section-block is-dark">
           <div class="section-head">
             <div>
-              <span class="eyebrow" data-en="Core archive" data-zh="核心档案">Core archive</span>
-              <h2 data-en="Records of Labor" data-zh="劳动记录">Records of Labor</h2>
+              <span class="eyebrow" data-i18n="workers.section1.eyebrow">Core archive</span>
+              <h2 data-i18n="workers.section1.title">Records of Labor</h2>
             </div>
-            <p data-en="Most entries do not have enough surviving information to become &quot;biographies.&quot; They remain brief because the system that recorded them kept them brief." data-zh="多数条目没有足够多的存留信息，无法成为“传记”。它们之所以短促，是因为记录它们的系统本来就只打算把它们记录得如此短促。">
-              Most entries do not have enough surviving information to become "biographies." They remain brief because
-              the system that recorded them kept them brief.
+            <p data-i18n="workers.section1.body">
+              Most people who built, moved, fired, stitched, or carried Ming power were not preserved as full subjects. They survive as traces.
             </p>
           </div>
 
           <div class="record-grid">
             <article class="worker-record">
-              <span class="mini-label" data-en="Worker file 2041" data-zh="工人档案 2041">Worker file 2041</span>
-              <h3 data-en="Name: Unknown" data-zh="姓名：不详">Name: Unknown</h3>
-              <p data-en="Occupation: Stone porter" data-zh="职业：运石工">Occupation: Stone porter</p>
-              <p data-en="Birth: Unrecorded" data-zh="出生：未记录">Birth: Unrecorded</p>
-              <p data-en="Death: Unrecorded" data-zh="死亡：未记录">Death: Unrecorded</p>
-              <p data-en="Contribution: Helped transport stone for a palace expansion." data-zh="贡献：参与宫殿扩建所需石料运输。">Contribution: Helped transport stone for a palace expansion.</p>
-              <div class="status-strip" data-en="Primary trace: payroll fragment / site tally" data-zh="主要痕迹：工资残片 / 工地点名册">Primary trace: payroll fragment / site tally</div>
+              <span class="mini-label" data-i18n="workers.card1.label">Worker file 1406-01</span>
+              <h3 data-i18n="workers.card1.title">Name: Unknown palace builder</h3>
+              <p data-i18n="workers.card1.body1">Occupation: Timber hauler for the Beijing palace works.</p>
+              <p data-i18n="workers.card1.body2">Contribution: Transported beams during the construction of the Forbidden City.</p>
+              <div class="status-strip" data-i18n="workers.card1.status">Primary trace: ration issue and transport tally</div>
             </article>
 
             <article class="worker-record is-burned">
-              <span class="mini-label" data-en="Textile reference 118-B" data-zh="纺织记录 118-B">Textile reference 118-B</span>
-              <h3 data-en="Female worker, name lost" data-zh="女性工人，姓名已失">Female worker, name lost</h3>
-              <p data-en="Occupation: Weaver" data-zh="职业：织工">Occupation: Weaver</p>
-              <p data-en="Contribution: Referenced only in factory output statistics." data-zh="贡献：仅出现在工厂产量统计中。">Contribution: Referenced only in factory output statistics.</p>
-              <p class="scratched" data-en="Residence: not preserved" data-zh="住址：未保存">Residence: not preserved</p>
-              <div class="status-strip" data-en="File state: corrupted / partial ink obstruction" data-zh="档案状态：已损坏 / 局部墨迹遮蔽">File state: corrupted / partial ink obstruction</div>
+              <span class="mini-label" data-i18n="workers.card2.label">Kiln record J-118</span>
+              <h3 data-i18n="workers.card2.title">Woman in imperial porcelain labor</h3>
+              <p data-i18n="workers.card2.body1">Occupation: Sorting, washing, or finishing work at Jingdezhen.</p>
+              <p data-i18n="workers.card2.body2">Contribution: Referenced only in an output register and breakage penalty sheet.</p>
+              <div class="status-strip" data-i18n="workers.card2.status">File state: edge loss / no personal name</div>
             </article>
 
             <article class="worker-record">
-              <span class="mini-label" data-en="Canal labor group" data-zh="运河劳工组">Canal labor group</span>
-              <h3 data-en="Collective entry only" data-zh="仅有集体条目">Collective entry only</h3>
-              <p data-en="Occupation: Diggers and haulers" data-zh="职业：开挖工与搬运工">Occupation: Diggers and haulers</p>
-              <p data-en="Contribution: Mentioned indirectly in canal completion report." data-zh="贡献：仅在运河竣工报告中被间接提及。">Contribution: Mentioned indirectly in canal completion report.</p>
-              <div class="status-strip" data-en="No personal record survives" data-zh="没有任何个人记录保存下来">No personal record survives</div>
+              <span class="mini-label" data-i18n="workers.card3.label">Canal register 07</span>
+              <h3 data-i18n="workers.card3.title">Grain transport labor detachment</h3>
+              <p data-i18n="workers.card3.body1">Occupation: Boat haulers and canal maintenance workers.</p>
+              <p data-i18n="workers.card3.body2">Contribution: Maintained imperial grain movement to the capital.</p>
+              <div class="status-strip" data-i18n="workers.card3.status">Archive note: listed as quota, not as persons</div>
             </article>
 
             <article class="worker-record">
-              <span class="mini-label" data-en="Domestic record 05" data-zh="家务记录 05">Domestic record 05</span>
-              <h3 data-en="House servant, no personal file" data-zh="家仆，无个人档案">House servant, no personal file</h3>
-              <p data-en="Occupation: Domestic servant" data-zh="职业：家务仆役">Occupation: Domestic servant</p>
-              <p data-en="Contribution: Appears in household expenditure records as labor cost." data-zh="贡献：只作为劳动成本出现在家庭支出记录中。">Contribution: Appears in household expenditure records as labor cost.</p>
-              <div class="status-strip" data-en="Indexed under expense, not under person" data-zh="按支出入档，而非按人物入档">Indexed under expense, not under person</div>
+              <span class="mini-label" data-i18n="workers.card4.label">Border labor slip</span>
+              <h3 data-i18n="workers.card4.title">Wall repair corvée laborer</h3>
+              <p data-i18n="workers.card4.body1">Occupation: Drafted construction labor on northern defenses.</p>
+              <p data-i18n="workers.card4.body2">Contribution: Repaired stone and tamped-earth works attached to frontier garrisons.</p>
+              <div class="status-strip" data-i18n="workers.card4.status">Recorded as body count only</div>
             </article>
 
             <article class="worker-record is-burned">
-              <span class="mini-label" data-en="Mine ledger 77" data-zh="矿井账册 77">Mine ledger 77</span>
-              <h3 data-en="Miner, surname illegible" data-zh="矿工，姓氏无法辨认">Miner, surname illegible</h3>
-              <p data-en="Contribution: Recorded in casualty count after tunnel collapse." data-zh="贡献：只出现在矿道塌方后的伤亡统计中。">Contribution: Recorded in casualty count after tunnel collapse.</p>
-              <p data-en="Historical note: total losses preserved, identities incomplete." data-zh="历史注记：总损失被保存，个体身份并不完整。">Historical note: total losses preserved, identities incomplete.</p>
-              <div class="status-strip" data-en="File state: edge loss / heat damage" data-zh="档案状态：边缘缺失 / 热损伤">File state: edge loss / heat damage</div>
+              <span class="mini-label" data-i18n="workers.card5.label">Workshop note S-22</span>
+              <h3 data-i18n="workers.card5.title">Silk weaver, name lost</h3>
+              <p data-i18n="workers.card5.body1">Occupation: Court textile labor in the lower Yangzi.</p>
+              <p data-i18n="workers.card5.body2">Contribution: Absorbed into production quotas for ceremonial cloth.</p>
+              <div class="status-strip" data-i18n="workers.card5.status">File state: partial stain / no household detail</div>
             </article>
 
             <article class="worker-record">
-              <span class="mini-label" data-en="War production unit" data-zh="战时生产单元">War production unit</span>
-              <h3 data-en="Anonymous hands" data-zh="匿名之手">Anonymous hands</h3>
-              <p data-en="Occupation: Assembly labor" data-zh="职业：装配工">Occupation: Assembly labor</p>
-              <p data-en="Contribution: Counted in output targets, not in named service rosters." data-zh="贡献：被计入产量目标，而不进入有姓名的服务名册。">Contribution: Counted in output targets, not in named service rosters.</p>
-              <div class="status-strip" data-en="Referenced as quantity only" data-zh="仅以数量形式被提及">Referenced as quantity only</div>
+              <span class="mini-label" data-i18n="workers.card6.label">Dock roster N-09</span>
+              <h3 data-i18n="workers.card6.title">Treasure fleet dock worker</h3>
+              <p data-i18n="workers.card6.body1">Occupation: Rope, loading, and warehouse labor.</p>
+              <p data-i18n="workers.card6.body2">Contribution: Helped stage large-scale departures under Zheng He.</p>
+              <div class="status-strip" data-i18n="workers.card6.status">Primary trace: port inventory and wage fragment</div>
             </article>
           </div>
         </section>
@@ -110,43 +105,28 @@
         <section class="section-block">
           <div class="section-head">
             <div>
-              <span class="eyebrow" data-en="Interface failure" data-zh="界面故障">Interface failure</span>
-              <h2 data-en="File Open Errors" data-zh="文件打开错误">File Open Errors</h2>
+              <span class="eyebrow" data-i18n="workers.section2.eyebrow">Interface failure</span>
+              <h2 data-i18n="workers.section2.title">File Open Errors</h2>
             </div>
-            <p data-en="This page uses broken states on purpose: a modern interface encountering a historical refusal to preserve." data-zh="这一页故意使用“损坏状态”：现代界面撞上了历史上不愿保存普通人的制度。">
-              This page uses broken states on purpose: a modern interface encountering a historical refusal to preserve.
+            <p data-i18n="workers.section2.body">
+              The damaged interface is intentional: the modern website collides with a historical archive that never intended these people to be searchable in full.
             </p>
           </div>
 
           <div class="fragment-wall">
-            <article class="fragment">
-              <span class="drawer-state" data-en="file corrupted" data-zh="文件损坏">file corrupted</span>
-              <p data-en="Worker testimonies referenced in inspection memo. Attachment missing." data-zh="检查备忘录中提到工人证词，但附件缺失。">Worker testimonies referenced in inspection memo. Attachment missing.</p>
-            </article>
-            <article class="fragment">
-              <span class="drawer-state" data-en="image unavailable" data-zh="图像不可用">image unavailable</span>
-              <p data-en="No portrait. No family photo. No likeness deemed necessary." data-zh="没有肖像，没有家庭照片，没有任何被认为“有必要”保存的面容。">No portrait. No family photo. No likeness deemed necessary.</p>
-            </article>
-            <article class="fragment">
-              <span class="drawer-state" data-en="metadata incomplete" data-zh="元数据不完整">metadata incomplete</span>
-              <p data-en="Recorded by task, not by person. Cross-index cannot proceed." data-zh="按工种记录，而不是按个人记录。无法继续交叉索引。">Recorded by task, not by person. Cross-index cannot proceed.</p>
-            </article>
-            <article class="fragment">
-              <span class="drawer-state" data-en="access denied" data-zh="访问被拒绝">access denied</span>
-              <p data-en="Labor unrest correspondence sealed, then lost in transfer." data-zh="关于劳工骚动的通信先被封存，后在移交中遗失。">Labor unrest correspondence sealed, then lost in transfer.</p>
-            </article>
-            <article class="fragment">
-              <span class="drawer-state" data-en="empty field" data-zh="字段为空">empty field</span>
-              <p data-en="Death noted without names." data-zh="死亡被记录下来，但没有姓名。">Death noted without names.</p>
-            </article>
+            <article class="fragment"><span class="drawer-state" data-i18n="workers.fragment1.state">file corrupted</span><p data-i18n="workers.fragment1.body">Complaint from canal hands mentioned in a prefectural memo. Attachment missing.</p></article>
+            <article class="fragment"><span class="drawer-state" data-i18n="workers.fragment2.state">image unavailable</span><p data-i18n="workers.fragment2.body">No portrait, no seal, no commemorative likeness.</p></article>
+            <article class="fragment"><span class="drawer-state" data-i18n="workers.fragment3.state">metadata incomplete</span><p data-i18n="workers.fragment3.body">Worker indexed by task, not by person.</p></article>
+            <article class="fragment"><span class="drawer-state" data-i18n="workers.fragment4.state">access denied</span><p data-i18n="workers.fragment4.body">Draft labor petition copied into a report, original not preserved.</p></article>
+            <article class="fragment"><span class="drawer-state" data-i18n="workers.fragment5.state">empty field</span><p data-i18n="workers.fragment5.body">Death count listed without names.</p></article>
           </div>
         </section>
       </main>
 
       <footer class="footer">
         <div class="footer-line">
-          <span data-en="What looks like missing data is also historical judgment." data-zh="看似缺失的数据，本身也是一种历史判断。">What looks like missing data is also historical judgment.</span>
-          <a class="muted-link" href="projects.html" data-en="See who built the &quot;great works&quot;" data-zh="查看是谁建成了这些“伟业”">See who built the &quot;great works&quot;</a>
+          <span data-i18n="footer.workers.left">This is where Ming history loses its confidence.</span>
+          <a class="muted-link" href="projects.html" data-i18n="footer.workers.right">See who built the great works</a>
         </div>
       </footer>
     </div>
