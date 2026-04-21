@@ -813,3 +813,37 @@ document.querySelectorAll("[data-ming-search]").forEach((form) => {
 });
 
 applyLanguage(getLanguage());
+
+const revealObserver = new IntersectionObserver(
+  (entries) => {
+    entries.forEach((entry) => {
+      if (entry.isIntersecting) {
+        entry.target.classList.add("is-visible");
+        revealObserver.unobserve(entry.target);
+      }
+    });
+  },
+  { threshold: 0.14 }
+);
+
+document.querySelectorAll(".reveal-on-scroll").forEach((element) => {
+  revealObserver.observe(element);
+});
+
+const parallaxNodes = [...document.querySelectorAll("[data-parallax]")];
+
+const updateParallax = () => {
+  const viewportHeight = window.innerHeight || 1;
+  parallaxNodes.forEach((node) => {
+    const speed = Number(node.dataset.parallax || 0);
+    const rect = node.getBoundingClientRect();
+    const delta = (rect.top + rect.height / 2 - viewportHeight / 2) * speed;
+    node.style.transform = `translate3d(0, ${delta}px, 0)`;
+  });
+};
+
+if (parallaxNodes.length) {
+  updateParallax();
+  window.addEventListener("scroll", updateParallax, { passive: true });
+  window.addEventListener("resize", updateParallax);
+}
