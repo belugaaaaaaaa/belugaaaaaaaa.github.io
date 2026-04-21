@@ -1,6 +1,5 @@
 const STORAGE_KEY = "ming-archive-language";
-const browserPrefersChinese = navigator.language?.toLowerCase().startsWith("zh");
-const DEFAULT_LANGUAGE = browserPrefersChinese ? "zh" : "en";
+const DEFAULT_LANGUAGE = "en";
 
 const translations = {
   en: {
@@ -667,6 +666,106 @@ const mingFigures = [
   }
 ];
 
+mingFigures.length = 0;
+mingFigures.push(
+  {
+    aliases: ["zhu yuanzhang", "hongwu", "hongwu emperor", "ming taizu", "\u6731\u5143\u748b", "\u6d2a\u6b66", "\u660e\u592a\u7956"],
+    enName: "Zhu Yuanzhang (Hongwu Emperor)",
+    zhName: "\u6731\u5143\u748b\uff08\u6d2a\u6b66\u5e1d\uff09",
+    enRole: "Founding emperor of the Ming",
+    zhRole: "\u660e\u671d\u5f00\u56fd\u7687\u5e1d",
+    years: "1328-1398",
+    enWhy: "Founded the Ming in 1368 and rebuilt imperial governance after the Yuan collapse.",
+    zhWhy: "1368\u5e74\u5efa\u7acb\u660e\u671d\uff0c\u5e76\u5728\u5143\u672b\u5d29\u89e3\u4e4b\u540e\u91cd\u5efa\u5e1d\u56fd\u6cbb\u7406\u3002",
+    enBias: "The archive remembers the founder more clearly than the military households, taxpayers, and labor drafts that sustained his order.",
+    zhBias: "\u6863\u6848\u8bb0\u4f4f\u4e86\u5f00\u56fd\u8005\uff0c\u5374\u6ca1\u6709\u540c\u6837\u6e05\u695a\u5730\u8bb0\u4f4f\u652f\u6491\u5176\u79e9\u5e8f\u7684\u519b\u6237\u3001\u7eb3\u7a0e\u8005\u4e0e\u5f80\u590d\u52b3\u5f79\u3002"
+  },
+  {
+    aliases: ["zhu di", "yongle", "yongle emperor", "chengzu", "\u6731\u68e3", "\u6c38\u4e50\u5e1d", "\u660e\u6210\u7956"],
+    enName: "Zhu Di (Yongle Emperor)",
+    zhName: "\u6731\u68e3\uff08\u6c38\u4e50\u5e1d\uff09",
+    enRole: "Emperor of expansion and monumental construction",
+    zhRole: "\u6269\u5f20\u4e0e\u5927\u578b\u8425\u5efa\u7684\u7687\u5e1d",
+    years: "1360-1424",
+    enWhy: "Shifted the capital to Beijing, sponsored the Forbidden City, and backed the treasure voyages.",
+    zhWhy: "\u8fc1\u90fd\u5317\u4eac\uff0c\u4e3b\u6301\u7d2b\u7981\u57ce\u5efa\u8bbe\uff0c\u5e76\u652f\u6301\u4e0b\u897f\u6d0b\u3002",
+    enBias: "The emperor's will is vivid; the transport chains, labor drafts, and construction deaths are much less visible.",
+    zhBias: "\u7687\u5e1d\u7684\u610f\u5fd7\u975e\u5e38\u6e05\u6670\uff0c\u800c\u8fd0\u8f93\u94fe\u6761\u3001\u52b3\u5f79\u5f81\u53d1\u4e0e\u65bd\u5de5\u6b7b\u4ea1\u5219\u8981\u6a21\u7cca\u5f97\u591a\u3002"
+  },
+  {
+    aliases: ["zheng he", "cheng ho", "\u90d1\u548c", "sanbao eunuch", "\u4e09\u4fdd\u592a\u76d1"],
+    enName: "Zheng He",
+    zhName: "\u90d1\u548c",
+    enRole: "Admiral of the treasure voyages",
+    zhRole: "\u4e0b\u897f\u6d0b\u8239\u961f\u7edf\u5e05",
+    years: "1371-1433",
+    enWhy: "Led the famous maritime expeditions that projected Ming power across the Indian Ocean.",
+    zhWhy: "\u7387\u9886\u8457\u540d\u7684\u8fdc\u6d0b\u822a\u884c\uff0c\u5c06\u660e\u671d\u6743\u529b\u6295\u5c04\u5230\u5370\u5ea6\u6d0b\u4e16\u754c\u3002",
+    enBias: "The admiral remains central; sailors, dock workers, shipbuilders, and port labor stay peripheral.",
+    zhBias: "\u90d1\u548c\u59cb\u7ec8\u4f4d\u4e8e\u4e2d\u5fc3\uff0c\u800c\u6c34\u624b\u3001\u7801\u5934\u5de5\u3001\u9020\u8239\u5de5\u4e0e\u6e2f\u53e3\u52b3\u5de5\u5219\u505c\u7559\u5728\u8fb9\u7f18\u3002"
+  },
+  {
+    aliases: ["zhang juzheng", "chang chu-cheng", "\u5f20\u5c45\u6b63"],
+    enName: "Zhang Juzheng",
+    zhName: "\u5f20\u5c45\u6b63",
+    enRole: "Grand Secretary and reformer",
+    zhRole: "\u9996\u8f85\u4e0e\u6539\u9769\u8005",
+    years: "1525-1582",
+    enWhy: "Directed major fiscal and administrative reforms in the early Wanli era.",
+    zhWhy: "\u5728\u4e07\u5386\u521d\u5e74\u4e3b\u6301\u91cd\u8981\u7684\u8d22\u653f\u4e0e\u884c\u653f\u6539\u9769\u3002",
+    enBias: "The archive emphasizes elite reform design more than the taxpayers, clerks, couriers, and local enforcers who carried it out.",
+    zhBias: "\u6863\u6848\u5f3a\u8c03\u7cbe\u82f1\u5982\u4f55\u8bbe\u8ba1\u6539\u9769\uff0c\u5374\u5f31\u5316\u4e86\u7eb3\u7a0e\u8005\u3001\u4e66\u540f\u3001\u9a7f\u5352\u4e0e\u5730\u65b9\u6267\u884c\u8005\u3002"
+  },
+  {
+    aliases: ["qi jiguang", "chi chi-kuang", "\u621a\u7ee7\u5149"],
+    enName: "Qi Jiguang",
+    zhName: "\u621a\u7ee7\u5149",
+    enRole: "General and military author",
+    zhRole: "\u540d\u5c06\u4e0e\u5175\u4e66\u4f5c\u8005",
+    years: "1528-1588",
+    enWhy: "Known for anti-pirate campaigns and for commanding disciplined troops on the frontier.",
+    zhWhy: "\u4ee5\u6297\u502d\u4e0e\u8fb9\u9632\u7ec3\u5175\u95fb\u540d\u3002",
+    enBias: "The commander is easily remembered; ordinary soldiers and laborers in the defensive system are not.",
+    zhBias: "\u7edf\u5e05\u5f88\u5bb9\u6613\u88ab\u8bb0\u4f4f\uff0c\u800c\u9632\u52a1\u4f53\u7cfb\u4e2d\u7684\u666e\u901a\u58eb\u5175\u4e0e\u52b3\u5de5\u5e76\u4e0d\u5bb9\u6613\u3002"
+  },
+  {
+    aliases: ["hai rui", "hai jui", "\u6d77\u745e"],
+    enName: "Hai Rui",
+    zhName: "\u6d77\u745e",
+    enRole: "Moral official and remonstrator",
+    zhRole: "\u6e05\u5b98\u4e0e\u8c0f\u5b98\u8c61\u5f81",
+    years: "1514-1587",
+    enWhy: "Remembered as a severe and incorruptible official in late-Ming political memory.",
+    zhWhy: "\u5728\u665a\u660e\u653f\u6cbb\u8bb0\u5fc6\u4e2d\u88ab\u8bb0\u6210\u4e25\u5389\u800c\u5ec9\u6d01\u7684\u5b98\u5458\u3002",
+    enBias: "The moral exemplar survives; the governed people whose burdens made moral protest meaningful are harder to recover.",
+    zhBias: "\u6e05\u5b98\u5f62\u8c61\u88ab\u4fdd\u5b58\u4e0b\u6765\uff0c\u800c\u4f7f\u8fd9\u79cd\u9053\u5fb7\u6279\u8bc4\u5177\u6709\u610f\u4e49\u7684\u88ab\u6cbb\u7406\u8005\u8d1f\u62c5\u5374\u66f4\u96be\u6062\u590d\u3002"
+  },
+  {
+    aliases: ["yu qian", "\u4e8e\u8c26", "tumu", "tumu crisis", "\u571f\u6728\u4e4b\u53d8"],
+    enName: "Yu Qian",
+    zhName: "\u4e8e\u8c26",
+    enRole: "Minister associated with the Tumu crisis aftermath",
+    zhRole: "\u571f\u6728\u4e4b\u53d8\u540e\u7684\u91cd\u81e3",
+    years: "1398-1457",
+    enWhy: "Helped organize the defense of Beijing after the 1449 Tumu crisis.",
+    zhWhy: "1449\u5e74\u571f\u6728\u4e4b\u53d8\u540e\u53c2\u4e0e\u7ec4\u7ec7\u5317\u4eac\u4fdd\u536b\u3002",
+    enBias: "The statesman is remembered more readily than the soldiers and civilians who endured the emergency.",
+    zhBias: "\u91cd\u81e3\u6bd4\u5904\u4e8e\u5371\u673a\u4e2d\u7684\u58eb\u5175\u4e0e\u5e73\u6c11\u66f4\u5bb9\u6613\u88ab\u8bb0\u4f4f\u3002"
+  },
+  {
+    aliases: ["wanli", "wanli emperor", "\u4e07\u5386", "\u4e07\u5386\u5e1d"],
+    enName: "Wanli Emperor",
+    zhName: "\u4e07\u5386\u5e1d",
+    enRole: "Long-reigning emperor of the late Ming",
+    zhRole: "\u665a\u660e\u957f\u671f\u5728\u4f4d\u7684\u7687\u5e1d",
+    years: "1563-1620",
+    enWhy: "His reign stretched across reform, court withdrawal, factional conflict, and mounting fiscal strain.",
+    zhWhy: "\u4ed6\u7684\u5728\u4f4d\u6a2a\u8de8\u6539\u9769\u3001\u6020\u653f\u3001\u515a\u4e89\u4e0e\u65e5\u76ca\u52a0\u91cd\u7684\u8d22\u653f\u538b\u529b\u3002",
+    enBias: "One reign title absorbs a vast field of local stress, taxation, labor, and political exhaustion.",
+    zhBias: "\u4e00\u4e2a\u5e74\u53f7\u5438\u7eb3\u4e86\u5e9e\u5927\u7684\u5730\u65b9\u538b\u529b\u3001\u7a0e\u8d4b\u3001\u52b3\u5f79\u4e0e\u653f\u6cbb\u5016\u6020\u3002"
+  }
+);
+
 const normalize = (value) =>
   value
     .toLowerCase()
@@ -846,4 +945,46 @@ if (parallaxNodes.length) {
   updateParallax();
   window.addEventListener("scroll", updateParallax, { passive: true });
   window.addEventListener("resize", updateParallax);
+}
+
+const storySteps = [...document.querySelectorAll(".story-step[data-panel]")];
+const storyPanels = [...document.querySelectorAll(".ming-stage-panel[data-panel-id]")];
+
+if (storySteps.length && storyPanels.length) {
+  const storyContainer = document.querySelector(".ming-story");
+  const totalSteps = storySteps.length;
+
+  const setActiveStoryPanel = (panelId) => {
+    storySteps.forEach((step) => {
+      step.classList.toggle("is-active", step.dataset.panel === panelId);
+    });
+    storyPanels.forEach((panel) => {
+      panel.classList.toggle("is-active", panel.dataset.panelId === panelId);
+    });
+
+    const activeIndex = storySteps.findIndex((step) => step.dataset.panel === panelId);
+    if (storyContainer && activeIndex >= 0) {
+      const progress = totalSteps === 1 ? 1 : (activeIndex + 1) / totalSteps;
+      storyContainer.style.setProperty("--story-progress", String(progress));
+    }
+  };
+
+  const storyObserver = new IntersectionObserver(
+    (entries) => {
+      const visibleEntries = entries
+        .filter((entry) => entry.isIntersecting)
+        .sort((a, b) => b.intersectionRatio - a.intersectionRatio);
+
+      if (visibleEntries.length) {
+        setActiveStoryPanel(visibleEntries[0].target.dataset.panel);
+      }
+    },
+    {
+      threshold: [0.2, 0.45, 0.7],
+      rootMargin: "-15% 0px -25% 0px"
+    }
+  );
+
+  storySteps.forEach((step) => storyObserver.observe(step));
+  setActiveStoryPanel(storySteps[0].dataset.panel);
 }
