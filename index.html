@@ -1,0 +1,208 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>The Archive of Civilization</title>
+    <meta
+      name="description"
+      content="A five-page archival website contrasting elite historical narratives with fragmented records of anonymous labor."
+    />
+    <link rel="stylesheet" href="styles.css" />
+    <script defer src="script.js"></script>
+  </head>
+  <body>
+    <div class="site-shell">
+      <header class="topbar">
+        <div class="topbar-inner">
+          <a class="brand" href="index.html">
+            <span class="brand-mark">The Archive of Civilization</span>
+            <span class="brand-sub">National Historical Digital Repository</span>
+          </a>
+          <nav class="main-nav" aria-label="Main navigation">
+            <a class="is-primary" href="index.html" aria-current="page">Home</a>
+            <a class="is-primary" href="figures.html">Great Figures</a>
+            <a class="is-primary" href="projects.html">Historic Projects</a>
+            <a class="is-primary" href="missing-records.html">Archive Rooms</a>
+            <a class="is-buried" href="workers.html">Other Records</a>
+          </nav>
+        </div>
+      </header>
+
+      <section class="hero">
+        <article class="hero-card">
+          <span class="eyebrow">Official exhibition sequence</span>
+          <h1 class="display-title">
+            The Archive
+            <br />
+            <span class="glitch-line" data-alt="of Civilization">of Civilization</span>
+          </h1>
+          <p class="lead">
+            Enter a polished national archive of dynasties, campaigns, decrees, ceremonies, and reforms.
+            Its interface is precise, its categories authoritative, and its confidence almost complete.
+          </p>
+          <div class="hero-grid" aria-label="Featured official records">
+            <div class="summary-chip">
+              <span class="chip-label">Dynastic timeline</span>
+              <span class="chip-value">Unified succession, restoration, prosperity, reform</span>
+            </div>
+            <div class="summary-chip">
+              <span class="chip-label">Imperial portraiture</span>
+              <span class="chip-value">Indexed, illuminated, and preserved in ceremonial order</span>
+            </div>
+            <div class="summary-chip">
+              <span class="chip-label">Military campaigns</span>
+              <span class="chip-value">Maps, banners, dispatches, victory notices, casualty totals</span>
+            </div>
+            <div class="summary-chip">
+              <span class="chip-label">Architectural legacy</span>
+              <span class="chip-value">Palaces, canals, railways, halls of state, monuments</span>
+            </div>
+          </div>
+
+          <div class="project-hover-board">
+            <div class="hover-note">
+              <strong>Palace Expansion</strong>
+              <p>Marble halls, ordered courtyards, inscriptions of renewal and dynastic stability.</p>
+              <div class="annotation">Built by unnamed laborers.</div>
+            </div>
+            <div class="hover-note">
+              <strong>National Railway</strong>
+              <p>Modernity, speed, territorial integration, the visible promise of a stronger state.</p>
+              <div class="annotation">Thousands laid the tracks; few were recorded.</div>
+            </div>
+            <div class="hover-note">
+              <strong>War Memorial</strong>
+              <p>Triumphal stone, command citations, strategic genius, official memory curated in bronze.</p>
+              <div class="annotation">The dead are counted. Most are not named.</div>
+            </div>
+            <div class="hover-note">
+              <strong>Canal System</strong>
+              <p>Hydraulic mastery, trade efficiency, national integration, civilizational achievement.</p>
+              <div class="annotation">The monument remained. The workers vanished into statistics.</div>
+            </div>
+          </div>
+
+          <a class="subtle-entry" href="workers.html">Auxiliary Labor Files</a>
+        </article>
+
+        <aside class="hero-aside">
+          <section class="authority-panel">
+            <div class="authority-visual" aria-hidden="true"></div>
+            <span class="badge">Featured record</span>
+            <h2>Age of Renewal</h2>
+            <p class="lead">
+              Court imagery, administrative order, and a language of greatness shape the official front page.
+            </p>
+          </section>
+
+          <section class="search-panel">
+            <span class="eyebrow">Catalogue search</span>
+            <h3>Indexed memory</h3>
+            <p>Search terms reveal what the archive has already decided is worth preserving.</p>
+
+            <div class="tag-row" aria-label="Sample search terms">
+              <button class="search-tag" type="button" data-fill="emperor">emperor</button>
+              <button class="search-tag" type="button" data-fill="dynasty">dynasty</button>
+              <button class="search-tag" type="button" data-fill="worker">worker</button>
+              <button class="search-tag" type="button" data-fill="maid">maid</button>
+            </div>
+
+            <form class="search-bar" data-archive-search>
+              <input type="text" name="query" placeholder="Search by rank, office, labor, or class" />
+              <button type="submit">Search</button>
+              <div class="search-feedback" data-search-output>
+                <strong>Search the catalogue</strong>
+                <span>Terms like <em>emperor</em> retrieve dense records. Terms like <em>worker</em> return the archive's silence.</span>
+              </div>
+              <div class="search-results" data-search-results></div>
+            </form>
+          </section>
+
+          <section class="notice-panel">
+            <small>Peripheral note</small>
+            <p>
+              A complete archive is often a complete archive of power. Absence is not always a missing fact;
+              sometimes it is a designed condition.
+            </p>
+          </section>
+        </aside>
+      </section>
+
+      <main class="main-content">
+        <section class="section-block">
+          <div class="section-head">
+            <div>
+              <span class="eyebrow">Front-page narrative</span>
+              <h2>What Official History Displays First</h2>
+            </div>
+            <p>
+              The site deliberately begins with visual abundance: power is easy to browse, easy to admire,
+              and richly indexed.
+            </p>
+          </div>
+
+          <div class="timeline">
+            <article class="timeline-item">
+              <time>Portraits</time>
+              <p>Monarchs, ministers, reformers, commanders rendered as complete and legible subjects.</p>
+            </article>
+            <article class="timeline-item">
+              <time>Wars</time>
+              <p>Campaign maps and directives elevate strategy while flattening the ordinary dead into totals.</p>
+            </article>
+            <article class="timeline-item">
+              <time>Reforms</time>
+              <p>Policy as authored vision, detached from the labor required to execute it.</p>
+            </article>
+            <article class="timeline-item">
+              <time>Prosperity</time>
+              <p>"Golden ages" appear as finished surfaces, not as extraction, discipline, and work.</p>
+            </article>
+          </div>
+        </section>
+
+        <section class="section-block is-dark">
+          <div class="section-head">
+            <div>
+              <span class="eyebrow">Buried navigation</span>
+              <h2>What The Interface Marginalizes</h2>
+            </div>
+            <p>
+              Labor does not appear as a proud category here. It is hidden behind secondary wording,
+              smaller type, and an almost apologetic link.
+            </p>
+          </div>
+
+          <div class="record-grid">
+            <article class="worker-record">
+              <span class="mini-label">Auxiliary file 01</span>
+              <h3>Worker No. 2041</h3>
+              <p>Helped transport stone for a palace expansion. No personal record survives.</p>
+              <div class="status-strip">Primary trace: quarry delivery ledger fragment</div>
+            </article>
+            <article class="worker-record is-burned">
+              <span class="mini-label">Auxiliary file 02</span>
+              <h3>Female Textile Worker</h3>
+              <p>Referenced in factory output statistics only. Name unrecorded.</p>
+              <div class="status-strip">File state: partial burn damage / ink bleed</div>
+            </article>
+            <article class="worker-record">
+              <span class="mini-label">Auxiliary file 03</span>
+              <h3>Port Labor Group</h3>
+              <p>Recorded as 118 bodies available for wartime loading. No individual entry opened.</p>
+              <div class="status-strip">Access note: not indexed by person</div>
+            </article>
+          </div>
+        </section>
+      </main>
+
+      <footer class="footer">
+        <div class="footer-line">
+          <span>The Archive of Civilization</span>
+          <a class="muted-link" href="missing-records.html">Proceed to missing records</a>
+        </div>
+      </footer>
+    </div>
+  </body>
+  </html>
